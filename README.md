@@ -12,6 +12,12 @@ Lastly, a small Python file provides sample code to read the CSV file to a Panda
   python sampleSquaresMap.py
 and will save a `chart.html` file to the current working directory. 
 
+To use,
+ - join the variable of interest using the GEO ID or Name of each Community area to the provided CSV file
+ - replace the `POP_2020:Q` variable with your chosen variable, appending the :Q on the end. See [Altair's documentation](https://altair-viz.github.io/user_guide/customization.html) for more customization
+ - replace the `POP_2020:Q` variable in the `tooltip` argument with your chosen variable
+ - replace the `title` argument with your chosen title
+
 This visualization is best used for showing general geographic trends. While the interactive version does allow for users to identify specific neighborhoods, it may be difficult for the audience to pick out their own neighborhood. One extension could be to add text marks with abbreviations for each neighborhood, possibly. 
 
 Note that change the size of the visualization in the code itself will cause the squares to overlap. A workaround is to export the visualization as an SVG and manually resize.
